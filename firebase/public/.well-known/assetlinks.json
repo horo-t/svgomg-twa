@@ -1,0 +1,5 @@
+[{
+  "relation": ["delegate_permission/common.handle_all_urls"],
+  "target" : { "namespace": "android_app", "package_name": "org.chromium.twa.twawbn",
+               "sha256_cert_fingerprints": ["F9:9B:1A:23:6C:A4:5D:D7:8A:7E:7C:06:9B:26:EF:61:21:85:FF:42:EC:00:B4:89:4D:5D:8D:51:EB:55:A9:84"] }
+}]

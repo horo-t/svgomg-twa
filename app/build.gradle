@@ -19,10 +19,10 @@ import groovy.xml.MarkupBuilder;
 apply plugin: 'com.android.application'
 
 def twaManifest = [
-    applicationId: 'org.chromium.twa.svgomg',
-    hostName: 'svgomg.firebaseapp.com', // The domain being opened in the TWA.
+    applicationId: 'org.chromium.twa.twawbn',
+    hostName: 'twa-wbn.web.app', // The domain being opened in the TWA.
     launchUrl: '/', // The start path for the TWA. Must be relative to the domain.
-    name: 'SVGOMG TWA', // The name shown on the Android Launcher.
+    name: 'TWA+WBN', // The name shown on the Android Launcher.
     themeColor: '#303F9F', // The color used for the status bar.
     backgroundColor: '#bababa', // The color used for the splash screen background.
     enableNotifications: false, // Set to true to enable notification delegation.
@@ -148,5 +148,5 @@ preBuild.dependsOn(generateShorcutsFile)
 
 dependencies {
     implementation fileTree(include: ['*.jar'], dir: 'libs')
-    implementation 'com.github.GoogleChrome.custom-tabs-client:customtabs:809a55cfa2'
+    implementation 'com.github.horo-t.custom-tabs-client:customtabs:830c864d8d'
 }

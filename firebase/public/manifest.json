@@ -1,0 +1,21 @@
+{
+  "name": "TWA WBN demo",
+  "short_name": "TWA WBN demo",
+  "description": "TWA WBN demo",
+  "icons": [
+    {
+      "sizes": "192x192",
+      "type": "image/png",
+      "src": "https://twa-wbn.web.app/TWA_WBN_192.png"
+    },
+    {
+      "sizes": "512x512",
+      "type": "image/png",
+      "src": "https://twa-wbn.web.app/TWA_WBN_512.png"
+    }
+  ],
+  "display": "standalone",
+  "background_color": "blue",
+  "theme_color": "lightblue",
+  "start_url": "/index.html"
+}

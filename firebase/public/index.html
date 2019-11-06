@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <link rel="stylesheet" href="/index.css">
+  <link rel="manifest" href="/manifest.json">
+  <link rel="canonical" href="https://twa-wbn.glitch.me/">
+  <link rel="shortcut icon" href="https://twa-wbn.web.app/TWA_WBN_16.ico">
+  <script src="/index.js"></script>
+  <script>
+    navigator.serviceWorker.register('/sw.js')
+      .then(reg => console.log('Service Worker registered', reg))
+      .catch(err => console.error('Service Worker **not** registered', err));
+  </script>
+  <title>TWA WBN demo</title>
+  <meta name="theme-color" content="lightblue">
+</head>
+<body>
+  <h1>
+    TWA WBN DEMO
+  </h1>
+</body>
+</html>

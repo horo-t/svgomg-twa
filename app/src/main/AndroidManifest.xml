@@ -57,6 +57,9 @@
             <meta-data android:name="android.support.customtabs.trusted.FILE_PROVIDER_AUTHORITY"
                 android:value="@string/providerAuthority"/>
 
+            <meta-data android:name="android.support.customtabs.trusted.INITIAL_WEB_BUNDLE"
+                android:value="initial.wbn"/>
+
             <meta-data android:name="android.app.shortcuts" android:resource="@xml/shortcuts" />
 
             <intent-filter>

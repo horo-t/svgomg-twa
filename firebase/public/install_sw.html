@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<body>
+  <script>
+    function log(txt) {
+      const div = document.createElement('div');
+      div.appendChild(document.createTextNode(txt));
+      document.body.appendChild(div);
+    }
+    navigator.serviceWorker.register('/sw.js')
+      .then(reg => {
+        log('Service Worker registered');
+        console.log('Service Worker registered', reg);
+      })
+      .catch(err => {
+        log('Service Worker registration failed.');
+        console.error('Service Worker **not** registered', err);
+      });
+  </script>
+</body>
+</html>
