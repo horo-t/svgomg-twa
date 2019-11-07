@@ -36,7 +36,7 @@
             android:name="use_browser_on_chromeOS"
             android:resource="@bool/useBrowserOnChromeOS" />
 
-        <activity android:name="android.support.customtabs.trusted.LauncherActivity"
+        <activity android:name="com.google.androidbrowserhelper.trusted.LauncherActivity"
             android:label="@string/appName">
             <meta-data android:name="android.support.customtabs.trusted.DEFAULT_URL"
                 android:value="@string/launchUrl" />
@@ -78,7 +78,7 @@
         </activity>
 
         <provider
-            android:name="android.support.v4.content.FileProvider"
+            android:name="androidx.core.content.FileProvider"
             android:authorities="@string/providerAuthority"
             android:grantUriPermissions="true"
             android:exported="false">
@@ -88,7 +88,7 @@
         </provider>
 
         <service
-             android:name="android.support.customtabs.trusted.TrustedWebActivityService"
+             android:name="com.google.androidbrowserhelper.trusted.DelegationService"
              android:enabled="@bool/enableNotification"
              android:exported="@bool/enableNotification">
 

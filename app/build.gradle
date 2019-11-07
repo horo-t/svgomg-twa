@@ -148,5 +148,5 @@ preBuild.dependsOn(generateShorcutsFile)
 
 dependencies {
     implementation fileTree(include: ['*.jar'], dir: 'libs')
-    implementation 'com.github.horo-t.custom-tabs-client:customtabs:830c864d8d'
+    implementation 'com.github.horo-t:android-browser-helper:980c61344e'
 }
